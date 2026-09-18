@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Carolina Muñoz | Marketing</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+    <a class="logo" href="index.html">
+        <img src="images/perfil.jpg" alt="Carolina Muñoz">
+        <span>Carolina Muñoz</span>
+    </a>
+
+    <nav>
+        <a href="#about me">ABOUT</a>
+        <a href="#work">WORK</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
+
+</header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <div class="status">
+                <span class="dot"></span>
+                MARKETING IN PROGRESS
+            </div>
+
+            <div class="hero-content">
+
+                <p class="number">01 / PORTFOLIO</p>
+
+                <h1>
+                    I SEE<br>
+                    <span>MARKETING</span><br>
+                    EVERYWHERE.
+                </h1>
+
+                <div class="hero-bottom">
+
+                    <p class="intro">
+                        Entendiendo a las personas,
+                        las ideas y las marcas que
+                        logran conectar con ellas.
+                    </p>
+
+                    <a href="#work" class="button">
+                        EXPLORE MY WORK ↘
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="location">
+                <span>CAROLINA MUÑOZ</span>
+                <span>MARKETING · STRATEGY · CREATIVITY</span>
+                <span>BARCELONA</span>
+            </div>
+
+        </section>
+
+
+        <section id="about" class="section about">
+
+            <p class="section-number">02 / ABOUT</p>
+
+            <h2>
+                CURIOSITY<br>
+                MEETS <span>STRATEGY.</span>
+            </h2>
+
+            <p class="about-text">
+                Soy Carolina, estudiante de marketing y una persona
+                curiosa por entender por qué elegimos lo que elegimos.
+                Me interesan las marcas, el comportamiento del consumidor,
+                la creatividad y las ideas capaces de convertirse en
+                experiencias que las personas recuerdan.
+            </p>
+
+        </section>
+
+
+        <section id="work" class="section work">
+
+            <p class="section-number">03 / SELECTED WORK</p>
+
+            <h2>PROJECTS.</h2>
+
+            <a href="projects/proyecto-01.html" class="project">
+    <span>01</span>
+    <h3>COMING SOON</h3>
+    <span>DIGITAL STRATEGY ↗</span>
+</a>
+
+<a href="projects/proyecto-02.html" class="project">
+    <span>02</span>
+    <h3>COMING SOON</h3>
+    <span>BRAND PROJECT ↗</span>
+</a>
+
+<a href="projects/proyecto-03.html" class="project">
+    <span>03</span>
+    <h3>COMING SOON</h3>
+    <span>CREATIVE CAMPAIGN ↗</span>
+</a>
+
+<a href="projects/proyecto-04.html" class="project">
+    <span>04</span>
+    <h3>COMING SOON</h3>
+    <span>MARKETING PROJECT ↗</span>
+</a>
+        </section>
+
+
+        <section id="contact" class="section contact">
+
+    <p class="section-number">04 / CONTACT</p>
+
+    <div class="contact-header">
+        <h2>
+            LET'S CREATE<br>
+            SOMETHING <span>TOGETHER.</span>
+        </h2>
+    </div>
+
+    <div class="contact-links">
+
+        <a href="https://www.instagram.com/carolinamp.marketing/"
+           target="_blank"
+           class="contact-item">
+            <span>01</span>
+            <h3>INSTAGRAM</h3>
+            <span>@carolinamp.marketing ↗</span>
+        </a>
+
+        <a href="mailto:carolinamp.marketing@gmail.com?subject=Let´s%20work%together"
+           class="contact-item">
+            <span>02</span>
+            <h3>EMAIL</h3>
+            <span>carolinamp.marketing@gmail.com ↗</span>
+        </a>    
+
+        <a href="https://wa.me/+34600728180"
+           target="_blank"
+           class="contact-item">
+            <span>03</span>
+            <h3>WHATSAPP</h3>
+            <span>+34 600728180↗</span>
+        </a>
+
+        <a href="TU_LINKEDIN"
+           target="_blank"
+           class="contact-item">
+            <span>04</span>
+            <h3>LINKEDIN</h3>
+            <span>LET'S CONNECT ↗</span>
+        </a>
+
+    </div>
+
+    <div class="contact-footer">
+        <span>CAROLINA MUÑOZ</span>
+        <span>CREATIVE MARKETER</span>
+        <span>BARCELONA · 2026</span>
+    </div>
+
+</section>
+
+    </main>
+<script>
+    const elements = document.querySelectorAll(
+        '.section, .project'
+    );
+
+    const observer = new IntersectionObserver((entries) => {
+
+        entries.forEach((entry) => {
+
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+
+        });
+
+    }, {
+        threshold: 0.15
+    });
+
+    elements.forEach((element) => {
+        element.classList.add('reveal');
+        observer.observe(element);
+    });
+</script>
+</body>
+
+</html>
+
